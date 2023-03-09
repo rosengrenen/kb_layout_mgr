@@ -23,7 +23,7 @@ tail = true
 
 ```bash
 # Toggle language
-$ kb_layout_mgr_client 0
+$ $HOME/.cargo/bin/kb_layout_mgr_client 0
 # Toggle layout
-$ kb_layout_mgr_client 1
+$ $HOME/.cargo/bin/kb_layout_mgr_client 1
 ```
