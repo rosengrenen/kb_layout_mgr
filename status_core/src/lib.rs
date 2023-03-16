@@ -82,7 +82,7 @@ where
             };
 
             match client.read(&mut buf) {
-                Ok(len) if len > 1 => self.handle_command(Command::from_u8(buf[0])),
+                Ok(len) if len >= 1 => self.handle_command(Command::from_u8(buf[0])),
                 _ => continue,
             }
 
