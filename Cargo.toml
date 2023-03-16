@@ -1,20 +1,6 @@
-[package]
-name = "kb_layout_mgr"
-version = "0.1.0"
-edition = "2021"
-
-[profile.dist]
-inherits = "release"
-strip = true
-opt-level = "z"
-lto = true
-codegen-units = 1
-panic = "abort"
-
-[[bin]]
-name = "kb_layout_mgr_server"
-path = "src/bin/server.rs"
-
-[[bin]]
-name = "kb_layout_mgr_client"
-path = "src/bin/client.rs"
+[workspace]
+members = [
+  "kb_layout",
+  "microphone",
+  "status_core",
+]

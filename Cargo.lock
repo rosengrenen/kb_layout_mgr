@@ -3,5 +3,19 @@
 version = 3
 
 [[package]]
-name = "kb_layout_mgr"
+name = "kb_layout"
+version = "0.1.0"
+dependencies = [
+ "status_core",
+]
+
+[[package]]
+name = "microphone"
+version = "0.1.0"
+dependencies = [
+ "status_core",
+]
+
+[[package]]
+name = "status_core"
 version = "0.1.0"
