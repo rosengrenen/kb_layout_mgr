@@ -4,3 +4,11 @@ members = [
   "microphone",
   "status_core",
 ]
+
+[profile.dist]
+inherits = "release"
+strip = true
+opt-level = "z"
+lto = true
+codegen-units = 1
+panic = "abort"
